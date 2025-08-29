@@ -21,11 +21,11 @@ Imposter Syndrome Defeato is a motivational interactive web-based game that turn
 ## A Note on the Live Demo
 
 The original and full-featured version of this game uses the AWS Polly voiceover feature to provide real-time, text-to-speech voiceovers to read the positive affirmations aloud. This creates a more immersive and encouraging experience that is highly recommended.
-To see this feature in action, please watch the 40-second demo video: [Watch it here](https://youtu.be/XXr-xd72tIw)
-.For the live version deployed on Appwrite Sites, the text-to-speech functionality has been disabled. This was a deliberate and responsible decision made for cost management, ensuring the site can remain freely accessible to everyone without incurring high AWS costs from public traffic. The full code for the Polly integration remains in this repository for anyone who wishes to run it locally.
+To see this feature in action, please watch the 40-second demo video: [Watch it here.](https://youtu.be/XXr-xd72tIw)
+For the live version deployed on Appwrite Sites, the text-to-speech functionality has been disabled. This was a deliberate and responsible decision made for cost management, ensuring the site can remain freely accessible to everyone without incurring high AWS costs from public traffic. The full code for the Polly integration remains in this repository for anyone who wishes to run it locally.
 
 ## Inspiration Behind The Project
-Along my studying and career journey, I’ve felt the weight of imposter syndrome firsthand. I wanted to create something that wasn’t just another app, but a tool that could genuinely help others who feel the same way. The goal was to build a wildcard project that was both fun and meaningful, turning a difficult internal struggle into an interactive game.
+Along my studying and career journeys, I’ve felt the weight of imposter syndrome firsthand. I wanted to create something that wasn’t just another app, but a tool that could genuinely help others who feel the same way. The goal was to build a wildcard project that was both fun and meaningful, turning a difficult internal struggle into an interactive game.
 This project was a fantastic learning experience, not just in coding, but in using modern development tools to bring an idea to life quickly and securely.
 
 ## Tech Stack & Features
