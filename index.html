@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Training - Confidence Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen - Ultrahuman Style -->
+    <div id="start-screen" class="screen active">
+        <div class="ultrahuman-start-container">
+            <!-- App Branding at Top -->
+            <div class="app-branding-top">
+                <div class="brand-text-large">IMPOSTER SYNDROME DEFEATO</div>
+            </div>
+            
+            <!-- Main Question -->
+            <div class="main-question">
+                <h1 class="question-title">How Confident Are You?</h1>
+            </div>
+            
+            <!-- Game Instructions -->
+            <div class="game-instructions">
+                <p>Put on your boxing gloves and fight back against negative self-talk!</p>
+                <p>Use your cursor-glove to punch away negative thoughts that try to bring you down.</p>
+                <p>Punch only the negative doubts. Positive affirmations remain on your screen to quietly boost your confidence.</p>
+                <p>Build your confidence from 50% to 100% and become the champion of your own mind!</p>
+            </div>
+            
+            <!-- Large Confidence Display -->
+            <div class="confidence-display">
+                <div class="confidence-display-wrapper">
+                    <span class="confidence-label">Current Confidence Level:</span>
+                    <div class="large-number">
+                        <span id="start-confidence-value">50</span><span class="large-number__unit">%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Start Button -->
+            <button id="start-btn" class="ultrahuman-btn ultrahuman-btn--primary">START</button>
+        </div>
+    </div>
+
+    <!-- Game Screen - Ultrahuman Workout Style -->
+    <div id="game-screen" class="screen">
+        <div class="workout-header">
+            <!-- Workout Type and Timer -->
+            <div class="workout-title">
+                <h2 class="workout-type">Mental Training</h2>
+                <div class="workout-timer">
+                    <span id="timer" class="timer-display">00:00:00</span>
+                </div>
+                <div class="workout-score">
+                    <span class="score-label">Score:</span>
+                    <span id="current-score" class="score-value">0</span>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- Central Progress Ring -->
+        <div class="workout-main">
+            <div class="progress-ring">
+                <div class="progress-ring__background">
+                    <div class="progress-ring__inner">
+                        <div class="progress-ring__value">
+                            <span id="confidence-percentage">50</span><span class="progress-ring__unit">%</span>
+                        </div>
+                        <div class="progress-ring__label">
+                            <span id="current-level">Level 1</span> • <span class="confidence-avg">AVG</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Zone Indicator -->
+                <div class="zone-indicator">
+                    <div class="zone-text">Zone 2 • 50 - 75%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div id="game-area" class="game-area ultrahuman-game-area boxing-arena">
+            <div id="level-indicator" class="level-indicator">
+                <h3 id="level-name">Mental Training</h3>
+                <p>Punch negative thoughts to build confidence!</p>
+                <p>Let positive affirmations empower you!</p>
+            </div>
+            <div id="punch-effect" class="punch-effect"></div>
+        </div>
+
+        <div id="achievement-popup" class="achievement-popup">
+            <p id="achievement-text"></p>
+        </div>
+    </div>
+
+    <!-- Victory Screen - Ultrahuman Summary Style -->
+    <div id="victory-screen" class="screen">
+        <div class="summary-container">
+            <!-- Main Achievement Card -->
+            <div class="achievement-card ultrahuman-card--success">
+                <div class="achievement-score">
+                    <div class="large-number">
+                        <span>100</span><span class="large-number__unit">%</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-subtitle">Champion Mindset Achieved</div>
+                <div class="achievement-description">
+                    <div class="achievement-line">You've reached 100% confidence and knocked out your imposter syndrome!</div>
+                    <div class="achievement-line">You fought like a true champion.</div>
+                    <div class="achievement-line">Remember: you are capable, you belong here, and you deserve your success.</div>
+                    <div class="achievement-line">Keep that fighting spirit!</div>
+                </div>
+                
+                <!-- Session Stats -->
+                <div class="session-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-time">Session Start</span>
+                        <span class="timeline-value">50%</span>
+                    </div>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-item">
+                        <span class="timeline-time">Session End</span>
+                        <span class="timeline-value">100%</span>
+                    </div>
+                </div>
+                
+                <div class="session-stats">
+                    <div class="session-duration">
+                        <span id="final-time" class="stat-value">0s</span>
+                        <span class="stat-label">Session Duration</span>
+                    </div>
+                    <div class="final-score">
+                        <span id="final-score" class="stat-value">0</span>
+                        <span class="stat-label">Final Score</span>
+                    </div>
+                    <div class="thoughts-defeated">
+                        <span id="thoughts-defeated" class="stat-value">0</span>
+                        <span class="stat-label">Thoughts Defeated</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="summary-actions">
+                <button id="restart-btn" class="ultrahuman-btn ultrahuman-btn--primary">TRAIN AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
